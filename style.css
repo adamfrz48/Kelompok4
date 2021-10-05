@@ -1,0 +1,22 @@
+.toggle-btn .light-txt, .toggle-btn .dark-txt {
+ position: absolute;
+ top: -100%;
+ }
+ .toggle-btn .light-txt {
+ left: -80%;
+ color: var(--light-txt);
+ }
+ .toggle-btn .dark-txt {
+ left: 80%;
+ color: var(--dark-txt);
+ }
+ 
+ /* set colors for dark theme */
+ .dark {
+ --background: #000;
+ --text: #fff;
+ --toggle: #fff;
+ --toggle-control: #000;
+ --dark-txt: #fff;
+ --light-txt: #333;
+ }
