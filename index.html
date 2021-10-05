@@ -21,6 +21,35 @@
  </div> 
  </div> 
  </div> 
+ <script>
+ // add leading zero 
+ var hr = d.getHours().toString().padStart(2, '0'); 
+ var min = d.getMinutes().toString().padStart(2, '0'); 
+ var sec = d.getSeconds().toString().padStart(2, '0'); 
+ 
+ // set content of date 
+ document.querySelector('.date').innerHTML = year + '-' + month + '-' + 
+day + ' ' + weekDay; 
+ 
+ // set content of hour 
+ document.querySelector('.hr').innerHTML = hr; 
+ 
+ // set content of minute 
+ document.querySelector('.min').innerHTML = min; 
+ 
+ // set content of second 
+ document.querySelector('.sec').innerHTML = sec; 
+ } 
+ 
+ // when elment with class 'toggle-btn' is clcked, 
+ document.querySelector('.toggle-btn').onclick = () => { 
+ 
+ // toggle class between 'light' and 'dark' 
+ document.querySelector('body').classList.toggle('dark'); 
+ document.querySelector('body').classList.toggle('light'); 
+ 
+ }; 
+ </script> 
 <div id="salam">
 </div>	
 </body>
