@@ -1,3 +1,25 @@
+ .clock {
+ width: 360px;
+ height: 120px;
+ transform: translateX(220px);
+ }
+ .date {
+ width: 100%;
+ text-align: center;
+ font-size: 2rem;
+ }
+ .date, .hr, .min, .sec, .colon {
+ color: var(--text);
+ text-shadow: 0 0 10px var(--shadow-1), 0 0 15px var(--shadow-2), 0 0 20px var(--shadow-2);
+ }
+ .hr, .min, .sec, .colon {
+ width: 20%;
+ float: left;
+ text-align: center;
+ font-size: 4rem;
+ }
+
+
 .toggle-btn .light-txt, .toggle-btn .dark-txt {
  position: absolute;
  top: -100%;
